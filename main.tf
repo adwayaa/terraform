@@ -19,8 +19,6 @@ resource "aws_instance" "web" {
   }
 }
 resource "null_resource" "remote-exec" {
-
-  
   provisioner "file" {
     source      = "script.sh"
     destination = "~/script.sh"
